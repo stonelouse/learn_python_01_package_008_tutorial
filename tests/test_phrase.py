@@ -19,3 +19,7 @@ def test_mixed_case_palindrome():
 
 def test_palindrome_with_punctuation():
     skip("Not implemented yet")
+
+
+def test_palindrome_with_punctuation():
+    assert Phrase("Madam, I'm Adam.").ispalindrome()
