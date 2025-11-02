@@ -23,3 +23,7 @@ def test_palindrome_with_punctuation():
 
 def test_palindrome_with_punctuation():
     assert Phrase("Madam, I'm Adam.").ispalindrome()
+
+
+def test_letters():
+    assert Phrase("Madam, I'm Adam.").letters() == "MadamImAdam"
