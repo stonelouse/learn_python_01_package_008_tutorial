@@ -18,7 +18,7 @@ class Phrase:
 
     def letters(self):
         """Return only the letters in the content."""
-        return "".join(c for c in self.content if re.search(r"[a-zA-Z]", c))
+        return "".join(re.findall(r"[A-Za-z]", self.content))
 
     def __iter__(self):
         self.phrase_iterator = iter(self.content)
