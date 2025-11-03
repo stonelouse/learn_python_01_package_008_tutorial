@@ -13,15 +13,12 @@ class Phrase:
 
     def _processed_content(self):
         """Process content for palindrome testing."""
+        """Process content for palindrome testing."""
         return self.letters().lower()
 
     def letters(self):
         """Return only the letters in the content."""
-        the_letters = []
-        for char in self.content:
-            if re.search(r"[a-zA-Z]", char):
-                the_letters.append(char)
-        return "".join(the_letters)
+        return "".join(c for c in self.content if re.search(r"[a-zA-Z]", c))
 
     def __iter__(self):
         self.phrase_iterator = iter(self.content)
