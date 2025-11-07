@@ -14,9 +14,9 @@ class Phrase:
     def _processed_content(self):
         """Process content for palindrome testing."""
         """Process content for palindrome testing."""
-        return self.letters().lower()
+        return self.letters_and_digits().lower()
 
-    def letters(self):
+    def letters_and_digits(self):
         """Return only the letters in the content."""
         return "".join(re.findall(r"[A-Za-z]", self.content))
 
