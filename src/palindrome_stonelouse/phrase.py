@@ -18,7 +18,7 @@ class Phrase:
 
     def letters_and_digits(self):
         """Return only the letters in the content."""
-        return "".join(re.findall(r"[A-Za-z]", self.content))
+        return "".join(re.findall(r"[A-Za-z0-9]", self.content))
 
     def __iter__(self):
         self.phrase_iterator = iter(self.content)
